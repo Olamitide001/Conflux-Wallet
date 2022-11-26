@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConfluxNetwork</title>
+    <link rel="stylesheet" href="conflux.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+        <div class="logo">
+        <h1>CONFLUX</h1>
+      </div>
+        <div class="navbar">
+            <li><a href="#">Staking</a></li>
+            <li><a href="#">Governance</a></li>
+            <li><a href="#">PoS</a></li>
+         </div>
+            <div class="right">
+            <li>
+              <span
+                ><i class="fas fa-circle-dot"></i
+                ><a href="#">Connect Wallet</a></span
+              >
+            </li>
+            <li>
+              <select name="lang">
+                <option value="">English</option>
+                <option value="Chinese">Chinese</option>
+              </select>
+            </li>
+          </div>
+    </div>
+    <div class="boxes">
+      <div class="container">
+        <div class="statment">
+          <div>
+            <p>Wallet CFX Balance</p>
+            <p>--</p>
+          </div>
+          <div>
+            <p>Staked CFX</p>
+            <p>--</p>
+          </div>
+          <div>
+            <p>Locked CFX</p>
+            <p>--</p>
+          </div>
+          <div>
+            <p>Current Voting Rights</p>
+            <p>--</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <div class="stake">
+        <form class="one">
+          <h2>Stake & Unstake</h2>
+          <br />
+          <label
+            >Amount Available to Stake:? 0 CFX &nbsp;
+            <a href="#">MAX</a> </label
+          ><br /><br />
+          <input type="number" placeholder="Stake Amount" /><br /><br />
+          <input type="submit" value="Stake" /><br /><br />
+          <label
+            >Amount Available to Untake:? 0 CFX &nbsp;
+            <a href="#">MAX</a> </label
+          ><br /><br />
+          <input
+            class="up"
+            type="number"
+            placeholder="Stake Amount"
+          /><br /><br />
+          <input type="submit" value="Stake" /><br /><br />
+          <div class="order">
+            <p>
+              CFX are only withdrawable for which have not been staked in the
+              governance nor the POS.
+            </p>
+            <p>Staked in governace: 0 CFX, unstake in 0 days.</p>
+            <p>Staked in PoS: 0 CFX staked, 0 CFX pending to be unstaked.</p>
+          </div>
+        </form>
+        <form class="two">
+          <h2>Lock</h2>
+          <label
+            >Amount Available to Lock:? 0 CFX &nbsp; <a href="#">MAX</a> </label
+          ><br /><br />
+          <label>
+            Add Locking Amount
+            <a href="#">ADD</a>
+            <input type="number" placeholder="=CFX" /> </label
+          ><br /><br />
+          <label
+            >Locking Duration <a href="#">EXTEND</a
+            ><input class="down" type="number" placeholder="=CFX" /> </label
+          ><br />
+          <h4>0 voting rights/CFX</h4>
+          <div class="final"><p>Final Total Voting Rights</p>
+          <span>0 votes</span></div>
+          <div class="unorder"> <h3>Tips ?</h3>
+          <p>
+            The voting rights will be awarded according to: number of quarters ×
+            number of tokens × 0.25. The longest lock duration for voting is 1
+            year.
+          </p>
+        </div>
+          <br /><br />
+          <input type="submit" value="Lock" />
+        </form>
+      </div>
+    </div>
+  </main>
+  </body>
+</html>
